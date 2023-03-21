@@ -7,9 +7,9 @@ import lombok.*;
 
 @Data
 @ToString
-public class VideoProcessed extends AbstractEvent {
+public class FileIndexed extends AbstractEvent {
 
     private Long id;
     private Long fileid;
-    private String url;
+    private Object keywordds;
 }

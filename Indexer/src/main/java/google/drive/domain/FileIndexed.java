@@ -10,7 +10,7 @@ import lombok.*;
 public class FileIndexed extends AbstractEvent {
 
     private Long id;
-    private String fileid;
+    private Long fileid;
     private List<String> keywordds;
 
     public FileIndexed(Index aggregate) {

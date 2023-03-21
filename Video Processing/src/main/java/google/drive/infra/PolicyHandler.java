@@ -19,19 +19,22 @@ public class PolicyHandler {
     @Autowired
     VideoRepository videoRepository;
 
+    @Autowired
+    VideoRepository videoRepository;
+
     @StreamListener(KafkaProcessor.INPUT)
     public void whatever(@Payload String eventString) {}
 
     @StreamListener(
         value = KafkaProcessor.INPUT,
-        condition = "headers['type']=='FileUploaded'"
+        condition = "headers['type']=='FileIndexed'"
     )
-    public void wheneverFileUploaded_ProcessVideo(
-        @Payload FileUploaded fileUploaded
+    public void wheneverFileIndexed_ProcessVideo(
+        @Payload FileIndexed fileIndexed
     ) {
-        FileUploaded event = fileUploaded;
+        FileIndexed event = fileIndexed;
         System.out.println(
-            "\n\n##### listener ProcessVideo : " + fileUploaded + "\n\n"
+            "\n\n##### listener ProcessVideo : " + fileIndexed + "\n\n"
         );
 
         // Sample Logic //

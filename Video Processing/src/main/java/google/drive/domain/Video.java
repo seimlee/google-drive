@@ -16,7 +16,7 @@ public class Video {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    private String fileid;
+    private Long fileid;
 
     private String url;
 
@@ -33,7 +33,7 @@ public class Video {
         return videoRepository;
     }
 
-    public static void processVideo(FileUploaded fileUploaded) {
+    public static void processVideo(FileIndexed fileIndexed) {
         /** Example 1:  new item 
         Video video = new Video();
         repository().save(video);
@@ -44,7 +44,7 @@ public class Video {
 
         /** Example 2:  finding and process
         
-        repository().findById(fileUploaded.get???()).ifPresent(video->{
+        repository().findById(fileIndexed.get???()).ifPresent(video->{
             
             video // do something
             repository().save(video);
