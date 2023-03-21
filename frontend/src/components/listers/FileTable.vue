@@ -72,6 +72,7 @@
                     { text: "filesize", value: "filesize" },
                     { text: "fileid", value: "fileid" },
                     { text: "path", value: "path" },
+                    { text: "filename", value: "filename" },
                 ],
             file : [],
             newValue: {},
@@ -94,6 +95,7 @@
                 'filesize': '',
                 'fileid': '',
                 'path': '',
+                'filename': '',
             }
         },
         methods: {

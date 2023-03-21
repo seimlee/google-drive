@@ -26,6 +26,8 @@ public class File {
 
     private String path;
 
+    private String filename;
+
     @PostPersist
     public void onPostPersist() {
         FileUploaded fileUploaded = new FileUploaded(this);

@@ -36,7 +36,7 @@ mvn spring-boot:run
 ## Test by API
 - Drive
 ```
- http :8088/files id="id" userid="userid" filetype="filetype" filesize="filesize" fileid="fileid" path="path" 
+ http :8088/files id="id" userid="userid" filetype="filetype" filesize="filesize" fileid="fileid" path="path" filename="filename" 
 ```
 - Indexer
 ```

@@ -20,6 +20,9 @@
             <div>
                 <String label="Path" v-model="item.path" :editMode="editMode" @change="change" />
             </div>
+            <div>
+                <String label="Filename" v-model="item.filename" :editMode="editMode" @change="change" />
+            </div>
         </v-card-text>
 
         <v-card-actions>
