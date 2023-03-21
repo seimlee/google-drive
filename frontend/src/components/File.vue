@@ -22,6 +22,7 @@
             <String label="Filesize" v-model="value.filesize" :editMode="editMode"/>
             <String label="Fileid" v-model="value.fileid" :editMode="editMode"/>
             <String label="Path" v-model="value.path" :editMode="editMode"/>
+            <String label="Filename" v-model="value.filename" :editMode="editMode"/>
         </v-card-text>
 
         <v-card-actions>

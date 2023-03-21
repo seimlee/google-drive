@@ -15,6 +15,7 @@
                             
                             
                             
+                            
                         </v-list-item-title>
 
                         <v-list-item-subtitle style="font-size:25px; font-weight:700;">
@@ -24,6 +25,7 @@
                             [ Filesize :  {{data.filesize }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             [ Fileid :  {{data.fileid }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             [ Path :  {{data.path }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            [ Filename :  {{data.filename }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         </v-list-item-subtitle>
 
                     </v-list-item-content>
@@ -110,6 +112,7 @@
                 'filesize': '',
                 'fileid': '',
                 'path': '',
+                'filename': '',
             }
         },
         methods: {

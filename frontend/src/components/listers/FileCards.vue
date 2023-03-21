@@ -73,6 +73,7 @@
                 'filesize': '',
                 'fileid': '',
                 'path': '',
+                'filename': '',
             }
         },
         methods:{
