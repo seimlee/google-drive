@@ -67,12 +67,10 @@
             headers: 
                 [
                     { text: "id", value: "id" },
-                    { text: "userid", value: "userid" },
-                    { text: "filetype", value: "filetype" },
-                    { text: "filesize", value: "filesize" },
-                    { text: "fileid", value: "fileid" },
+                    { text: "name", value: "name" },
+                    { text: "size", value: "size" },
                     { text: "path", value: "path" },
-                    { text: "filename", value: "filename" },
+                    { text: "type", value: "type" },
                 ],
             file : [],
             newValue: {},
@@ -90,12 +88,10 @@
             this.values = temp.data._embedded.files;
 
             this.newValue = {
-                'userid': '',
-                'filetype': '',
-                'filesize': '',
-                'fileid': '',
+                'name': '',
+                'size': 0,
                 'path': '',
-                'filename': '',
+                'type': '',
             }
         },
         methods: {

@@ -68,8 +68,8 @@
             me.values = temp.data._embedded.indices;
             
             me.newValue = {
-                'fileid': 0,
-                'keywordds': [],
+                'fileId': 0,
+                'keywords': [],
             }
         },
         methods:{

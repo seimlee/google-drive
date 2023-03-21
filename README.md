@@ -1,7 +1,7 @@
 # 
 
 ## Model
-www.msaez.io/#/storming/seimlee02-(googledrive)
+www.msaez.io/#/storming/google-drive-s
 
 ## Before Running Services
 ### Make sure there is a Kafka server running
@@ -20,11 +20,11 @@ cd /bin
 ## Run the backend micro-services
 See the README.md files inside the each microservices directory:
 
-- Drive
-- Indexer
-- Video Processing
-- Notification
-- Dashboard
+- drive
+- indexer
+- video processing
+- notification
+- dashboard
 
 
 ## Run API Gateway (Spring Gateway)
@@ -34,23 +34,22 @@ mvn spring-boot:run
 ```
 
 ## Test by API
-- Drive
+- drive
 ```
- http :8088/files id="id" userid="userid" filetype="filetype" filesize="filesize" fileid="fileid" path="path" filename="filename" 
+ http :8088/files id="id" name="name" size="size" path="path" type="type" 
 ```
-- Indexer
+- indexer
 ```
- http :8088/indices id="id" fileid="fileid" keywordds="keywordds" 
+ http :8088/indices id="id" fileId="fileId" keywords="keywords" 
 ```
-- Video Processing
+- video processing
 ```
- http :8088/videos id="id" fileid="fileid" url="url" 
- http :8088/videos id="id" fileid="fileid" url="url" 
+ http :8088/videos id="id" fileId="fileId" url="url" 
 ```
-- Notification
+- notification
 ```
 ```
-- Dashboard
+- dashboard
 ```
 ```
 

@@ -8,23 +8,23 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: Drive
+        - id: drive
           uri: http://localhost:8081
           predicates:
             - Path=/files/**, 
-        - id: Indexer
+        - id: indexer
           uri: http://localhost:8082
           predicates:
             - Path=/indices/**, 
-        - id: Video Processing
+        - id: video processing
           uri: http://localhost:8083
           predicates:
-            - Path=/videos/**, /videos/**, 
-        - id: Notification
+            - Path=/videos/**, 
+        - id: notification
           uri: http://localhost:8084
           predicates:
             - Path=, 
-        - id: Dashboard
+        - id: dashboard
           uri: http://localhost:8085
           predicates:
             - Path=, 
@@ -51,23 +51,23 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: Drive
+        - id: drive
           uri: http://drive:8080
           predicates:
             - Path=/files/**, 
-        - id: Indexer
+        - id: indexer
           uri: http://indexer:8080
           predicates:
             - Path=/indices/**, 
-        - id: Video Processing
+        - id: video processing
           uri: http://videoProcessing:8080
           predicates:
-            - Path=/videos/**, /videos/**, 
-        - id: Notification
+            - Path=/videos/**, 
+        - id: notification
           uri: http://notification:8080
           predicates:
             - Path=, 
-        - id: Dashboard
+        - id: dashboard
           uri: http://dashboard:8080
           predicates:
             - Path=, 

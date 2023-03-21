@@ -17,12 +17,10 @@
         </v-card-title >
 
         <v-card-text>
-            <String label="Userid" v-model="value.userid" :editMode="editMode"/>
-            <String label="Filetype" v-model="value.filetype" :editMode="editMode"/>
-            <String label="Filesize" v-model="value.filesize" :editMode="editMode"/>
-            <String label="Fileid" v-model="value.fileid" :editMode="editMode"/>
+            <String label="Name" v-model="value.name" :editMode="editMode"/>
+            <Number label="Size" v-model="value.size" :editMode="editMode"/>
             <String label="Path" v-model="value.path" :editMode="editMode"/>
-            <String label="Filename" v-model="value.filename" :editMode="editMode"/>
+            <String label="Type" v-model="value.type" :editMode="editMode"/>
         </v-card-text>
 
         <v-card-actions>
@@ -41,7 +39,7 @@
                     @click="save"
                     v-else
             >
-                Upload
+                UploadFile
             </v-btn>
             <v-btn
                     color="deep-purple lighten-2"

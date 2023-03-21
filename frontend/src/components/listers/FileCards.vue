@@ -68,12 +68,10 @@
             me.values = temp.data._embedded.files;
             
             me.newValue = {
-                'userid': '',
-                'filetype': '',
-                'filesize': '',
-                'fileid': '',
+                'name': '',
+                'size': 0,
                 'path': '',
-                'filename': '',
+                'type': '',
             }
         },
         methods:{

@@ -6,22 +6,16 @@
 
         <v-card-text>
             <div>
-                <String label="Userid" v-model="item.userid" :editMode="editMode" @change="change" />
+                <String label="Name" v-model="item.name" :editMode="editMode" @change="change" />
             </div>
             <div>
-                <String label="Filetype" v-model="item.filetype" :editMode="editMode" @change="change" />
-            </div>
-            <div>
-                <String label="Filesize" v-model="item.filesize" :editMode="editMode" @change="change" />
-            </div>
-            <div>
-                <String label="Fileid" v-model="item.fileid" :editMode="editMode" @change="change" />
+                <Number label="Size" v-model="item.size" :editMode="editMode" @change="change" />
             </div>
             <div>
                 <String label="Path" v-model="item.path" :editMode="editMode" @change="change" />
             </div>
             <div>
-                <String label="Filename" v-model="item.filename" :editMode="editMode" @change="change" />
+                <String label="Type" v-model="item.type" :editMode="editMode" @change="change" />
             </div>
         </v-card-text>
 

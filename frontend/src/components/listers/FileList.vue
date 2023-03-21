@@ -14,18 +14,14 @@
                             
                             
                             
-                            
-                            
                         </v-list-item-title>
 
                         <v-list-item-subtitle style="font-size:25px; font-weight:700;">
                             [ Id :  {{data.id }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            [ Userid :  {{data.userid }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            [ Filetype :  {{data.filetype }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            [ Filesize :  {{data.filesize }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            [ Fileid :  {{data.fileid }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            [ Name :  {{data.name }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            [ Size :  {{data.size }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             [ Path :  {{data.path }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            [ Filename :  {{data.filename }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            [ Type :  {{data.type }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         </v-list-item-subtitle>
 
                     </v-list-item-content>
@@ -107,12 +103,10 @@
             this.values = temp.data._embedded.files;
             
             this.newValue = {
-                'userid': '',
-                'filetype': '',
-                'filesize': '',
-                'fileid': '',
+                'name': '',
+                'size': 0,
                 'path': '',
-                'filename': '',
+                'type': '',
             }
         },
         methods: {

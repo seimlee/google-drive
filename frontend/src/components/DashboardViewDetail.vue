@@ -10,7 +10,7 @@
                 <String label="Name" v-model="item.name" :editMode="editMode" @change="change" />
             </div>
             <div>
-                <String label="Sieze" v-model="item.sieze" :editMode="editMode" @change="change" />
+                <Number label="Size" v-model="item.size" :editMode="editMode" @change="change" />
             </div>
             <div>
                 <String label="Path" v-model="item.path" :editMode="editMode" @change="change" />

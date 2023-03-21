@@ -15,22 +15,16 @@
                             <v-list-item-title>
                             </v-list-item-title>
                             <v-list-item-subtitle>
-                                Userid :  {{item.userid }}
+                                Name :  {{item.name }}
                             </v-list-item-subtitle>
                             <v-list-item-subtitle>
-                                Filetype :  {{item.filetype }}
-                            </v-list-item-subtitle>
-                            <v-list-item-subtitle>
-                                Filesize :  {{item.filesize }}
-                            </v-list-item-subtitle>
-                            <v-list-item-subtitle>
-                                Fileid :  {{item.fileid }}
+                                Size :  {{item.size }}
                             </v-list-item-subtitle>
                             <v-list-item-subtitle>
                                 Path :  {{item.path }}
                             </v-list-item-subtitle>
                             <v-list-item-subtitle>
-                                Filename :  {{item.filename }}
+                                Type :  {{item.type }}
                             </v-list-item-subtitle>
                         </v-list-item-content>
 
@@ -83,10 +77,6 @@
                 if(val != undefined) {
                     var arr = this.list[val]._links.self.href.split('/');
                     obj['id'] = arr[4]; 
-                    
-                    
-                    
-                    
                     
                     
                     

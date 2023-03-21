@@ -13,8 +13,6 @@ import IndexDetail from "./components/listers/IndexDetail"
 
 import VideoManager from "./components/listers/VideoCards"
 import VideoDetail from "./components/listers/VideoDetail"
-import VideoManager from "./components/listers/VideoCards"
-import VideoDetail from "./components/listers/VideoDetail"
 
 
 
@@ -45,16 +43,6 @@ export default new Router({
                 component: IndexDetail
             },
 
-            {
-                path: '/videos',
-                name: 'VideoManager',
-                component: VideoManager
-            },
-            {
-                path: '/videos/:id',
-                name: 'VideoDetail',
-                component: VideoDetail
-            },
             {
                 path: '/videos',
                 name: 'VideoManager',

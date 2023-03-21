@@ -68,7 +68,7 @@
             me.values = temp.data._embedded.videos;
             
             me.newValue = {
-                'fileid': 0,
+                'fileId': 0,
                 'url': '',
             }
         },

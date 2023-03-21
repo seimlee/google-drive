@@ -16,7 +16,7 @@
 
                         <v-list-item-subtitle style="font-size:25px; font-weight:700;">
                             [ Id :  {{data.id }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            [ Fileid :  {{data.fileid }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            [ FileId :  {{data.fileId }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             [ Url :  {{data.url }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         </v-list-item-subtitle>
 
@@ -99,7 +99,7 @@
             this.values = temp.data._embedded.videos;
             
             this.newValue = {
-                'fileid': 0,
+                'fileId': 0,
                 'url': '',
             }
         },

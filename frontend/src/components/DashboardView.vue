@@ -23,7 +23,7 @@
             headers: [
                 { text: "id", value: "id" },
                 { text: "name", value: "name" },
-                { text: "sieze", value: "sieze" },
+                { text: "size", value: "size" },
                 { text: "path", value: "path" },
                 { text: "type", value: "type" },
                 { text: "isIndexed", value: "isIndexed" },

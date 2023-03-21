@@ -16,8 +16,8 @@
 
                         <v-list-item-subtitle style="font-size:25px; font-weight:700;">
                             [ Id :  {{data.id }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            [ Fileid :  {{data.fileid }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            [ Keywordds :  {{data.keywordds }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            [ FileId :  {{data.fileId }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            [ Keywords :  {{data.keywords }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         </v-list-item-subtitle>
 
                     </v-list-item-content>
@@ -99,8 +99,8 @@
             this.values = temp.data._embedded.indexes;
             
             this.newValue = {
-                'fileid': 0,
-                'keywordds': [],
+                'fileId': 0,
+                'keywords': [],
             }
         },
         methods: {

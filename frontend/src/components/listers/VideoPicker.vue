@@ -15,7 +15,7 @@
                             <v-list-item-title>
                             </v-list-item-title>
                             <v-list-item-subtitle>
-                                Fileid :  {{item.fileid }}
+                                FileId :  {{item.fileId }}
                             </v-list-item-subtitle>
                             <v-list-item-subtitle>
                                 Url :  {{item.url }}

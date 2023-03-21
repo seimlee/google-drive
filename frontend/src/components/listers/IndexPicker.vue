@@ -15,10 +15,10 @@
                             <v-list-item-title>
                             </v-list-item-title>
                             <v-list-item-subtitle>
-                                Fileid :  {{item.fileid }}
+                                FileId :  {{item.fileId }}
                             </v-list-item-subtitle>
                             <v-list-item-subtitle>
-                                Keywordds :  {{item.keywordds }}
+                                Keywords :  {{item.keywords }}
                             </v-list-item-subtitle>
                         </v-list-item-content>
 

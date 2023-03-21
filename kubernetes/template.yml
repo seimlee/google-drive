@@ -3,22 +3,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: Drive
+  name: drive
   labels:
-    app: Drive
+    app: drive
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: Drive
+      app: drive
   template:
     metadata:
       labels:
-        app: Drive
+        app: drive
     spec:
       containers:
-        - name: Drive
-          image: username/Drive:latest
+        - name: drive
+          image: username/drive:latest
           ports:
             - containerPort: 8080
           readinessProbe:
@@ -43,22 +43,22 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: Indexer
+  name: indexer
   labels:
-    app: Indexer
+    app: indexer
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: Indexer
+      app: indexer
   template:
     metadata:
       labels:
-        app: Indexer
+        app: indexer
     spec:
       containers:
-        - name: Indexer
-          image: username/Indexer:latest
+        - name: indexer
+          image: username/indexer:latest
           ports:
             - containerPort: 8080
           readinessProbe:
@@ -83,22 +83,22 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: Video Processing
+  name: video processing
   labels:
-    app: Video Processing
+    app: video processing
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: Video Processing
+      app: video processing
   template:
     metadata:
       labels:
-        app: Video Processing
+        app: video processing
     spec:
       containers:
-        - name: Video Processing
-          image: username/Video Processing:latest
+        - name: video processing
+          image: username/video processing:latest
           ports:
             - containerPort: 8080
           readinessProbe:
@@ -123,22 +123,22 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: Notification
+  name: notification
   labels:
-    app: Notification
+    app: notification
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: Notification
+      app: notification
   template:
     metadata:
       labels:
-        app: Notification
+        app: notification
     spec:
       containers:
-        - name: Notification
-          image: username/Notification:latest
+        - name: notification
+          image: username/notification:latest
           ports:
             - containerPort: 8080
           readinessProbe:
@@ -163,22 +163,22 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: Dashboard
+  name: dashboard
   labels:
-    app: Dashboard
+    app: dashboard
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: Dashboard
+      app: dashboard
   template:
     metadata:
       labels:
-        app: Dashboard
+        app: dashboard
     spec:
       containers:
-        - name: Dashboard
-          image: username/Dashboard:latest
+        - name: dashboard
+          image: username/dashboard:latest
           ports:
             - containerPort: 8080
           readinessProbe:
@@ -205,15 +205,15 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: Drive
+  name: drive
   labels:
-    app: Drive
+    app: drive
 spec:
   ports:
     - port: 8080
       targetPort: 8080
   selector:
-    app: Drive
+    app: drive
 
 
 ---
@@ -222,15 +222,15 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: Indexer
+  name: indexer
   labels:
-    app: Indexer
+    app: indexer
 spec:
   ports:
     - port: 8080
       targetPort: 8080
   selector:
-    app: Indexer
+    app: indexer
 
 
 ---
@@ -239,15 +239,15 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: Video Processing
+  name: video processing
   labels:
-    app: Video Processing
+    app: video processing
 spec:
   ports:
     - port: 8080
       targetPort: 8080
   selector:
-    app: Video Processing
+    app: video processing
 
 
 ---
@@ -256,15 +256,15 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: Notification
+  name: notification
   labels:
-    app: Notification
+    app: notification
 spec:
   ports:
     - port: 8080
       targetPort: 8080
   selector:
-    app: Notification
+    app: notification
 
 
 ---
@@ -273,13 +273,13 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: Dashboard
+  name: dashboard
   labels:
-    app: Dashboard
+    app: dashboard
 spec:
   ports:
     - port: 8080
       targetPort: 8080
   selector:
-    app: Dashboard
+    app: dashboard
 
